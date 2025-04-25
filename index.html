@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Example</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url("background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .x {
+        position: absolute;
+        top: 92%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        width: 8%;
+        height: 8%;
+        transition: filter 0.3s ease;
+      }
+      .cult {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 6%;
+        padding-top: 1%;
+        transition: filter 0.3s ease;
+      }
+      .cult:hover {
+        filter: brightness(0);
+      }
+      .x:hover {
+        filter: drop-shadow(0 0 10px #919191);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://x.com/Justa_Bera" target="_blank"
+      ><img src="justa_bera.png" class="cult"
+    /></a>
+    <a href="https://x.com/BeraPuppets" target="_blank"
+      ><img src="x_logo.svg" class="x"
+    /></a>
+  </body>
+</html>
